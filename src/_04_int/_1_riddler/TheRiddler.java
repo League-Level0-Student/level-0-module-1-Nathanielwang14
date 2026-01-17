@@ -1,4 +1,7 @@
 package _04_int._1_riddler;
+
+import javax.swing.JOptionPane;
+
 //    Copyright (c) The League of Amazing Programmers 2013-2019
 //    Level 0
 
@@ -9,11 +12,28 @@ public class TheRiddler {
 	public static void main(String[] args) {
 
 		// 1. Make a variable to hold the score
+		int x = 0;
 
 		// 3. Ask the user a riddle. Here are some ideas: bit.ly/some-riddles
-
+		String y = JOptionPane.showInputDialog(null, "What is round, blue, and sweet?");
+		if(y == "blueberry") {
+			JOptionPane.showMessageDialog(null, "Correct");
+			x=+1;
+		}else {
+			JOptionPane.showMessageDialog(null, "Wrong, the answer is blueberry");
+			x+=0;
+		}
+		String y = JOptionPane.showInputDialog(null, "What is round, red, and sweet?");
+		if(y == "blueberry") {
+			JOptionPane.showMessageDialog(null, "Strawberry");
+			x=+1;
+		}else {
+			JOptionPane.showMessageDialog(null, "Wrong, the answer is strawberry");
+			x+=0;
+		}
+		JOptionPane.showMessageDialog(null, x);
 		// 4. If they got the answer right, pop up "correct!" and increase the score by one
-
+	
 		// 5. Otherwise, say "wrong" and tell them the answer
 
 		// 6. Add some more riddles
