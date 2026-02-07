@@ -8,9 +8,10 @@ public class FixThePrint {
 	// CODE.
 	
 	public static void main(String[] args) {
+		
 
-		for (int i = 0; i > 3; i++) {
-			System.out.println("HELLO");
+		for (int i = 1; i <= 3; i++) {
+			System.out.println(i);
 		}
 
 	}

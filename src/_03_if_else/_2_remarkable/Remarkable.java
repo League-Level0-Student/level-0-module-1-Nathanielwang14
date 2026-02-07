@@ -12,7 +12,7 @@ public static void main(String[] args) {
 
 		// 2. Ask the user to enter a name. Store their answer in a variable.
 String question = JOptionPane.showInputDialog("What's your name?");
-	if(question == "person1") {
+	if(question.equals("person1")) {
 		JOptionPane.showMessageDialog(null, "You are a great artist!");
 		
 	} else if(question == "person2") {
